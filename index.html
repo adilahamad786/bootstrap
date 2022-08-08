@@ -9,6 +9,14 @@
   <body>
 
     <div style="margin: 20px;" class="container-fluid bg-warning ">
+      <div style="min-height: 400px;" class="row bg-secondary justify-content-evenly">
+        <div class="col-3 bg-info "> column 1</div>
+        <div class="col-3 bg-danger order-2"> column 2</div>
+        <div class="col-3 bg-success order-xs-1"> column 3</div>
+      </div>
+    </div>
+
+    <div style="margin: 20px;" class="container-fluid bg-warning ">
       <div style="min-height: 400px;" class="row bg-secondary">
         <div class="col bg-danger align-self-start"> column 1</div>
         <div class="col bg-success align-self-center"> column 2</div>
@@ -39,9 +47,10 @@
         <div class="col-4 bg-danger"> col-4 </div>
         <div class="col-8 bg-secondary">
           col-8
-          <div class="row row-cols-1">
-            <div class="col-8 bg-success">col-8</div>
-            <div class="col-4 bg-danger">col-4</div>
+          <div style="min-height:100px;" class="row row-cols-1 align-items-between">
+            <div style="height:25px" class="col-8 bg-success">col-8</div>
+            <div style="height:25px" class="col-4 bg-danger">col-4</div>
+            <div style="height:25px" class="col-4 bg-danger">col-4</div>
           </div>
         </div>
       </div>
